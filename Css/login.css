@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(229, 229, 229, 0.80);
+}
+
+main{
+    background: white;
+    border-radius: 0.8vw;
+    box-shadow: 0vw 0vw 0.4vw 0.1vw rgba(0, 0, 0, 0.60);
+    width: 50vw;
+    height: 80vh;
+}
+
+main h2{
+    margin-top: 6vh;
+    margin-left: 4vw;
+    padding-bottom: 3vh;
+    font-size: 2.4vw;
+}
+
+main .input__login{
+    margin-top: 6vh;
+    margin-left: 4vw;
+    font-size: 1.2vw;
+    font-weight: 700;
+}
+
+.input__login input{
+    height: 6vh;
+    width: 40vw;
+    padding-left: 1vw;
+    font-size: 1.1vw;
+    border: 0.1vw solid rgba(0, 0, 0, 0.70);
+    border-radius: 0.2vw;
+}
+
+.input__login input:focus{
+    outline: none; 
+    border: 0.2vw solid blue;
+}
+
+.input__login p{
+    margin-bottom: 1vh;
+}
+
+main .Remember__Me{
+    margin-left: 4vw;
+    margin-top: 4vh;
+    font-size: 1.2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40vw;
+}
+
+.Remember__Me div{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.Remember__Me a{
+    color: blue;
+    text-decoration: none;
+}
+
+button{
+    margin-top: 9vh;
+    margin-left: 4vw;
+    width: 40vw;
+    height: 8vh;
+    font-size: 1.2vw;
+    color: white;
+    font-weight: 700;
+    user-select: none;
+    cursor: pointer;
+    border: 0.1vw solid rgba(0, 0, 0, 0);
+    border-radius: 0.2vw;
+    background: rgb(15, 15, 245);
+}
