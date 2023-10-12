@@ -9,7 +9,7 @@
                 echo "Fallo al conectar a MySQL:" . $mysqli->connect_error;
             }
             else {
-                echo "Conexion exitosa";
+                echo "";
             }
             return $mysqli;
         }
