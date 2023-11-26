@@ -1,6 +1,5 @@
 <?php
 
-
     class Vacuna {
 
         public int $id;

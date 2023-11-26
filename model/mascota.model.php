@@ -1,8 +1,8 @@
 
 <?php 
 
-class Mascota {
-
+class Mascota
+{
     public int $id;
     public string $nombre;
     public $fechaNacimiento;
@@ -10,6 +10,7 @@ class Mascota {
     public int $userId;
     public int $tipoMascotaId;
     public int $RazaId;
+    
 
 }
 

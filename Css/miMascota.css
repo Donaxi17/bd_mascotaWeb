@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right top, #0417dc, #0070ff, #00a5ff, #00d2f5, #bff8f7);
+}
+
+main{
+    background: rgba(255, 255, 255, 0.90);
+    box-shadow: 0vh 0vh 1vh 0.4vh rgba(73, 73, 248, 0.80);
+    border-radius: 1vh;
+    height: 80vh;
+    width: 80vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main h2{
+    margin-top: 6vh;
+    font-size: 4vh;
+}
+
+main span{
+    margin-top: 1vh;
+    font-size: 2.8vh;
+    color: rgba(0, 0, 255, 0.90);
+}
+
+.cont__inputs form{
+    /* border: 1px solid red; */
+    height: 48vh;
+    margin-top: 6vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.cont__inputs label{
+    font-size: 2.4vh;
+    font-weight: 600;
+    margin-bottom: 0.4vh;
+
+}
+
+.cont__inputs div{
+    display: flex;
+    flex-direction: column;
+}
+
+.cont__inputs .nombreMascota{
+    font-size: 2vh;
+    padding-left: 1vh;
+    border: 0.1vh solid rgba(0, 0, 0, 0.70);
+    border-radius: 0.6vh;
+    height: 5vh;
+    width: 36vh;
+}
+
+.cont__inputs .fechaNacimiento{
+    padding-left: 1vh;
+    font-size: 2.2vh;
+    height: 5vh;
+    width: 36vh;
+}
+
+.cont__inputs select{
+    padding-left: 1vh;
+    font-size: 2.2vh;
+    height: 5vh;
+    width: 36vh;
+}
+
+.cont__inputs button{
+    margin-top: 2vh;
+    font-size: 2.4vh;
+    padding: 1.4vh 4.6vh;
+    border: none;
+    border-radius: 0.6vh;
+    background: rgba(0, 0, 255, 0.80);
+    color: white;
+    cursor: pointer;
+    user-select: none;
+}
+
+

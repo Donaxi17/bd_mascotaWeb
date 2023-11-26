@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(226, 226, 226, 0.6);
+}
+
+main article{
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+    height: 60vh;
+}
+
+main .foto__perfilMascota{
+    width: 9vw;
+    height: 18vh;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.foto__perfilMascota img{
+    height: 100%;
+    width: 100%;
+}
+
+main .main__informacionMascota{
+    position: relative;
+    margin-top: 10vh;
+    margin-left: 15vh;
+    /* border: 1px solid red; */
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4vh;
+}
+
+/* .main__informacionMascota div{
+    margin-left: 14vh;
+    font-size: 2.8vh;
+} */
+
+.main__informacionMascota div span{
+    color: rgba(0, 0, 230, 0.80);
+    margin-left: 0.2vw;
+    font-size: 2.6vh;
+}
+
+.formAgregar,
+.formEditar,
+.formEliminar{
+    display: none;
+}
+
+.formAgregar form,
+.formEditar form,
+.formEliminar form{
+    background: white;
+    position: absolute;
+    bottom: -3vh;
+    left: 19vh;
+    height: 32vh;
+    width: 48vh;
+    border-radius: 1vh;
+    box-shadow: 0vh 0vh 1vh 0.4vh rgba(0, 0, 255, 0.4);
+}
+
+.formEliminar form{
+    height: 24vh;
+    width: 60vh;
+    bottom: 2vh;
+    left: 14vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formAgregar form div,
+.formEditar form div{
+    margin-top: 1.8vh;
+    margin-left: 3vh;
+}
+
+.formAgregar form div input,
+.formAgregar form div select,
+.formEditar form div input,
+.formEditar form div select{
+    margin-left: 0.6vh;
+    height: 4vh;
+    padding-left: 1vh;
+    border: 0.2vh solid rgba(0, 0, 0, 0.50);
+    border-radius: 0.6vh;
+}
+
+.formAgregar form div input:focus,
+.formAgregar form div select:focus,
+.formEditar form div input:focus,
+.formEditar form div select:focus{
+    outline: none;
+    border: 0.3vh solid blue;
+}
+
+.formEditar .btnForm--posicion,
+.formEditar .btnForm--posicion{
+    margin-top: 3vh;
+    margin-left: 12vh;
+    width: 24vh;
+}
+
+.formEliminar .btnForm--posicion{
+    margin-top: 4vh;
+}
+
+.formEliminar h3{
+    font-size: 3vh;
+    margin-top: 7vh;
+}
+
+.botonesAjustes{
+    display: flex;
+    gap: 2vh;
+}
+
+.botonesAjustes button{
+    height: 4vh;
+    width: 11vh;
+    border: none;
+    border-radius: 0.6vh;
+    font-size: 2vh;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+}
+
+.botonesAjustes .btnColor--azul{
+    background: rgba(0, 0, 255, 0.80);
+}
+
+.botonesAjustes .btnColor--rojo{
+    background: rgba(255, 0, 0, 0.80);
+}
+
+.pantalla-carga{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: rgb(100, 100, 253);
+    position: absolute;
+    z-index: 1000;
+}
+
+.pantalla-carga div{
+    height: 50vh;
+    width: 50vh;
+    color: white;
+}
+
+.pantalla-carga  figure{
+    width: 50vh;
+    height: 40vh;
+}
+
+.pantalla-carga  figure img{
+    height: 100%;
+    width: 100%;
+}
+
+.pantalla-carga h2{
+    text-align: center;
+    margin-top: 1vh;
+    margin-left: 1vh;
+    font-size: 4.4vh;
+}
+
+.pantalla-carga span{
+    margin-right: 2.2vh;
+    font-size: 4vh;
+    color: black;
+}

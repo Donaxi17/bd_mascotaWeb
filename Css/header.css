@@ -1,0 +1,84 @@
+header{
+    height: 12vh;
+    padding: 0vw 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(0, 0, 230, 0.60);
+}
+
+header .logo_text{
+    width: 13vw;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.logo_text img{
+    width: 2.2vw;
+    margin-top: 1vh;
+}
+
+.logo_text a{
+    font-size: 2vw;
+    font-weight: 600;
+    margin-top: 0.2vh;
+    text-decoration: none;
+    color: blanchedalmond;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header ul a{
+    margin-right: 4vw;
+    font-size: 1.4vw;
+    font-weight: 600;
+    color: blanchedalmond;
+    text-decoration: none;
+}
+
+.header__perfil{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 6.6vw;
+}
+
+.header__perfil h2{
+    color: blanchedalmond;
+    font-size: 1.3vw;
+    cursor: pointer;
+}
+
+.header__perfil img{
+    width: 2.6vw;
+    cursor: pointer;
+    user-select: none;
+    z-index: 1000;
+}
+
+.header__perfil .config__perfil{
+    width: 14vw;
+    height: 24vh;
+    border: 1px solid red;
+    position: absolute;
+    right: 2vw;
+    top: 10vh;
+    background: white;
+    box-shadow: 0vw 0vw 0.6vw 0.1vw rgba(0, 0, 230, 0.60);
+    border: 0.1vw solid rgba(0, 0, 0, 0.70);
+    border-radius: 0.4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.config__perfil a{
+    text-decoration: none;
+    font-size: 1.4vw;
+    font-weight: 600;
+    color: black;
+}
+
+.config__perfil a:hover{
+    color: rgba(0, 0, 230, 0.80);
+}

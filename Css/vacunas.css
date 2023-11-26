@@ -1,0 +1,416 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20vh;
+}
+
+main .main__section{
+    height: 80vh;
+    width: 90vh;
+    border-radius: 1vh;
+    box-shadow: 0vh 0vh 1vh 0.4vh rgba(0, 0, 255, 0.40);
+}
+
+.primera_sectionMain{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.primera_sectionMain h2{
+    margin-top: 4vh;
+    font-size: 4vh;
+}
+
+.info__vacunas{
+    border: 0.1vh solid rgba(0, 0, 0, 0.60);
+    margin-top: 3vh;
+    width: 50vh;
+    height: 41.4vh;
+}
+
+.info__vacunas--titulo{
+    background: rgba(12, 12, 247, 0.70);
+    height: 5vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14vh;
+
+}
+
+.info__vacunas h3{
+    margin-left: 4vh;
+    font-size: 3vh;
+}
+
+/* .info__vacunas section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.conten__datos{
+    overflow: auto;
+    height: 36.4vh;
+    font-size: 2.4vh;
+}
+
+.conten__datos::-webkit-scrollbar{
+    width: 1vh;
+}
+
+.conten__datos::-webkit-scrollbar-thumb{
+    background: rgba(0, 0, 255, 0.60);
+    border-radius: 2vh;
+}
+
+.datos__vacuna{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.datos__vacuna div{
+    width: 25vh;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info__vacunas article{
+    /* border: 1px solid purple; */
+    height: 6vh;
+    width: 100%;
+}
+
+.conten__botones{
+    margin-top: 2vh;
+    display: flex;
+    gap: 1vh;
+}
+
+.conten__botones button{
+    width: 16vh;
+    height: 5vh;
+    font-size: 2.2vh;
+    border: none;
+    border-radius: 1vh;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+}
+
+.color--Verde{
+    background: rgba(0, 128, 0, 0.90);
+}
+
+.color--Azul{
+    background: rgba(0, 0, 255, 0.90);
+}
+
+.color--Rojo{
+    background: rgba(255, 0, 0, 0.90);
+}
+
+/* -------------------------------------------- */
+
+.segunda_sectionMain{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.segunda_sectionMain h2{
+    margin-top: 5vh;
+    font-size: 4vh;
+}
+
+.segunda_sectionMain form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.conten__inputs{
+    margin-top: 8vh;
+    display: flex;
+    align-items: center;
+    gap: 3vh;
+}
+
+.conten__inputs input{
+    height: 5vh;
+    width: 20vh;
+    border: 0.2vh solid rgba(0, 0, 0, 0.70);
+    border-radius: 0.8vh;
+    padding-left: 1vh;
+    font-size: 2.2vh;
+}
+
+.conten__button{
+    margin-top: 5vh;
+    display: flex;
+    gap: 2vh;
+}
+
+.conten__button button{
+    font-size: 2vh;
+    height: 5vh;
+    width: 12vh;
+    border: none;
+    border-radius: 1vh;
+    cursor: pointer;
+    user-select: none;
+    color: white;
+}
+
+.conten__button .btnEnviar{
+    background: rgba(0, 0, 255, 0.90);
+}
+
+.conten__button .btnEliminar{
+    background: rgba(255, 0, 0, 0.90);
+}
+
+.conten__controlVacuna{
+    margin-top: 6vh;
+    border: 0.1vh solid rgba(0, 0, 0, 0.70);
+    height: 29.8vh;
+    width: 70vh;
+}
+
+.dato__controlVacuna--titulo{
+    height: 4vh;
+    background: rgba(0, 0, 255, 0.70);
+    color: white;
+    font-size: 2.2vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4vh;
+}
+
+.conten__datos--CV{
+    overflow: auto;
+    height: 25.8vh;
+    font-size: 2.4vh;
+}
+
+
+.datos__controlVacuna{
+    display: flex;
+    align-items: center;
+}
+
+.datos__controlVacuna div{
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.idDatoMascota{
+    width: 6vh;
+    margin-left: 4vh;
+}
+
+.nombreDatoMascota{
+    width: 14vh;
+    margin-left: 7.6vh;
+}
+
+.vacunaDatoMascota{
+    width: 14vh;
+    margin-left: 6.6vh;
+}
+
+.fechaDatoMascota{
+    width: 14vh;
+    margin-left: 6vh;
+}
+
+
+/* -----------   Form Vacunas Nuevo  ------------------ */
+
+.form__vacunasNueva{
+    border-radius: 1vh;
+    box-shadow: 0vh 0vh 0.8vh 0.4vh rgba(0, 0, 255, 0.30);
+    margin-top: 3vh;
+    height: 14vh;
+    width: 50vh;
+    display: none;
+}
+
+.form__vacunasNueva div{
+    margin-top: 2vh;
+}
+
+.form__vacunasNueva input{
+    font-size: 2vh;
+    height: 4vh;
+    width: 24vh;
+    padding: 1vh;
+}
+
+.form__vacunasNueva input:focus{
+    outline: none;
+    border: 0.3vh solid blue;
+}
+
+.form__vacunasNueva article{
+    margin-top: 2vh;
+}
+
+.form__vacunasNueva button{
+    font-size: 2vh;
+    width: 14vh;
+    height: 5vh;
+    border: none;
+    border-radius: 1vh;
+    color: white;
+    background: rgba(0, 0, 255, 0.90);
+    cursor: pointer;
+    user-select: none;
+}
+
+.form__vacunasNueva .btnCancelarNuevo{
+    background: rgba(255, 0, 0, 0.90);
+}
+
+.form__vacunasNueva form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* -----------   Form Vacunas  Editar ------------------ */
+
+.form__vacunasActualizar{
+    border-radius: 1vh;
+    box-shadow: 0vh 0vh 0.8vh 0.4vh rgba(0, 0, 255, 0.30);
+    margin-top: 3vh;
+    height: 14vh;
+    width: 50vh;
+    display: none;
+}
+
+.form__vacunasActualizar input{
+    font-size: 2vh;
+    height: 4vh;
+    width: 22vh;
+    padding: 1vh;
+}
+
+.form__vacunasActualizar input:focus{
+    outline: none;
+    border: 0.3vh solid blue;
+}
+
+.form__vacunasActualizar form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form__vacunasActualizar form div{
+    margin-top: 2vh;
+    display: flex;
+    gap: 4vh;
+}
+
+.form__vacunasActualizar button{
+    margin-top: 2vh;
+    font-size: 2vh;
+    width: 14vh;
+    height: 5vh;
+    border: none;
+    border-radius: 1vh;
+    color: white;
+    background: rgba(0, 0, 255, 0.90);
+    cursor: pointer;
+    user-select: none;
+}
+
+.form__vacunasActualizar .btnCancelarActualizar{
+    background: rgba(255, 0, 0, 0.90);
+}
+
+
+/* -----------   Form Vacunas Eliminar  ------------------ */
+
+.form__vacunasEliminar{
+    border-radius: 1vh;
+    box-shadow: 0vh 0vh 0.8vh 0.4vh rgba(0, 0, 255, 0.30);
+    margin-top: 3vh;
+    height: 14vh;
+    width: 50vh;
+    display: none;
+}
+
+.form__vacunasEliminar div{
+    margin-top: 2vh;
+}
+
+.form__vacunasEliminar input{
+    font-size: 2vh;
+    height: 4vh;
+    width: 24vh;
+    padding: 1vh;
+}
+
+.form__vacunasEliminar input:focus{
+    outline: none;
+    border: 0.3vh solid blue;
+}
+
+.form__vacunasEliminar article{
+    margin-top: 2vh;
+}
+
+.form__vacunasEliminar button{
+    font-size: 2vh;
+    width: 14vh;
+    height: 5vh;
+    border: none;
+    border-radius: 1vh;
+    color: white;
+    background: rgba(0, 0, 255, 0.90);
+    cursor: pointer;
+    user-select: none;
+}
+
+.form__vacunasEliminar .btnCancelarEliminar{
+    background: rgba(255, 0, 0, 0.90);
+}
+
+.form__vacunasEliminar form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.segunda_sectionMain .selectFor{
+    width: 20vh;
+    height: 5vh;
+    border-radius: 0.8vh;
+    border: 0.2vh solid rgba(0, 0, 0, 0.70);
+    padding-left: 1vh;
+    font-size: 2.2vh;
+}
+
+.segunda_sectionMain .selectFor:focus{
+    outline: none;
+    border: 0.4px solid blue;
+}

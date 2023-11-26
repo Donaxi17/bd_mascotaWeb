@@ -1,6 +1,5 @@
 <?php
 
-
     class Role {
 
         public int $id;

@@ -2,16 +2,325 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
-    background: rgb(255, 198, 198);
+    background: rgba(168, 178, 227, 0.4);
 }
 
-.pantalla-carga {
+header{
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 4vw;
+    height: 14vh;
+}
+
+header .logo_text{
+    width: 12.8vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo_text img{
+    width: 2.2vw;
+}
+
+.logo_text h1{
+    font-size: 2vw;
+    margin-top: 0.2vh;
+    color: rgb(0, 0, 220);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* header .div_links{
+    border: 1px solid red;;
+} */
+
+.div_links .link_inicio{
+    color: rgba(0, 0, 230, 0.70);
+}
+.div_links button{
+    height: 6vh;
+    width: 13vw;
+    background: rgba(0, 0, 220, 0.90);
+    border: none;
+    border-radius: 0.4vw;
+    color: white;
+    font-size: 1.2vw;
+    font-weight: 600;
+    user-select: none;
+    cursor: pointer;
+}
+
+.div_links ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 39vw;
+    height: 7vh;
+}
+
+.div_links ul a{
+    margin-right: 2vw;
+    font-size: 1.3vw;
+    color: rgba(0, 0, 0, 0.80);
+    text-decoration: none;
+}
+
+.div_links ul a:hover{
+    color: rgba(0, 0, 230, 0.70);
+}
+
+.div_links ul div{
+    margin-top: 0.4vh;
+    display: flex;
+    align-items: center;
+}
+.div_links ul div img{
+    width: 1.5vw;
+    margin-bottom: 0.4vh;
+    margin-right: 0.4vw;
+    user-select: none;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+    /* border: 1px solid red; */
+    margin-top: 4vh;
+    height: 80vh;
+}
+
+main section{
+    height: 76%;
+    width: 32%;
+}
+
+.primera_section h2{
+    color: rgba(0, 0, 230, 0.70);
+    margin-top: 8vh;
+    font-size: 3.4vw;
+}
+
+.primera_section h3{
+    color: rgba(0, 0, 230, 0.70);
+    margin-top: 0.2vw;
+    font-size: 1.4vw;
+}
+
+.primera_section p{
+    color: rgba(0, 0, 0, 0.80);
+    margin-top: 2.2vh;
+    font-size: 1.2vw;
+}
+
+.primera_section button{
+    background: rgba(0, 0, 220, 0.90);
+    color: white;
+    border: none;
+    border-radius: 0.4vw;
+    height: 7vh;
+    width: 14vw;
+    margin-top: 8vh;
+    font-size: 1vw;
+    user-select: none;
+    cursor: pointer;
+}
+
+
+.segunda_section img{
     width: 100%;
     height: 100%;
-    background-color: #f0f0f0; /* Color de fondo de la pantalla de carga */
+    box-shadow: 0vw 0vw 0.6vw 0.2vw rgba(0, 0, 230, 0.60);
+    border-radius: 1.4vw;
+}
+
+.servicios{
+    margin-top: 6vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicios h2{
+    margin-top: 6vh;
+    color: rgb(0, 0, 220);
+    font-size: 3vw;
+}
+
+.servicios .conten_section{
+    margin-top: 6vh;
+    height: 80%;
+    width: 86%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+}
+
+.conten_section article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90%;
+    width: 30%;
+}
+
+.conten_section div{
+    width: 60%;
+    height: 48%;
+}
+
+.conten_section div img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.conten_section article h3{
+    margin-top: 4vh;
+    font-size: 1.8vw;
+    color: rgb(0, 0, 220);
+}
+
+.conten_section article p{
+    width: 74%;
+    text-align: center;
+    margin-top: 1.6vh;
+    font-size: 1.2vw;
+}
+
+.conten_section article button{
+    margin-top: 6vh;
+    width: 40%;
+    height: 6vh;
+    font-size: 1vw;
+    border-radius: 0.4vw;
+    background: rgba(0, 0, 220, 0.90);
+    color: white;
+    border: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.contacto{
+    border: 1px solid red;
+    margin-top: 6vh;
+    height: 110vh;
+    color: white;
+    background: rgba(0, 0, 220, 0.90);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacto h2{
+    font-size: 3vw;
+    margin-top: 6vh;
+}
+
+.contacto .contato_informacion{
+    margin-top: 8vh;
+    font-size: 1.2vw;
+    text-align: center;
+    display: flex;
+    gap: 6vw;
+}
+
+.contacto .contato_informacion p{
+    margin-top: 1.2vh;
+    color: rgba(255, 255, 255, 0.90);
+}
+
+.contacto_inputs{
+    margin-top: 8vh;
+    width: 64%;
+}
+
+.contacto_inputs div{
+    display: flex;
+    gap: 4vw;
+    justify-content: center;
+}
+
+.contacto_inputs div input{
+    height: 6vh;
+    padding-left: 1vw;
+    width: 46%;
+    border: none;
+    border-bottom: 0.1vw solid rgba(255, 255, 255, 0.70);
+    background: rgba(0, 0, 220, 0);
+    color: white;
+    font-size: 1.2vw;
+}
+
+.contacto_inputs .input_mensaje{
+    height: 8vh;
+    width: 90%;
+    margin-left: 3vw;
+    margin-top: 8vh;
+    padding-left: 1vw;
+    border: none;
+    border-bottom: 0.1vw solid rgba(255, 255, 255, 0.70);
+    background: rgba(0, 0, 220, 0);
+    color: white;
+    font-size: 1.2vw;
+}
+
+.contacto_inputs div input:focus,
+.contacto_inputs .input_mensaje:focus{
+    outline: none;
+    border-bottom: 0.2vw solid white;
+}
+
+.contacto_inputs div input::placeholder,
+.contacto_inputs .input_mensaje::placeholder{
+    color: white;
+}
+
+.contacto_inputs button{
+    margin-top: 6vh;
+    margin-left: 42%;
+    height: 6vh;
+    width: 15%;
+    font-size: 1.1vw;
+    border: none;
+    border-radius: 0.4vw;
+    user-select: none;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.70);
+}
+
+.contacto_inputs button:hover{
+    background: rgba(255, 255, 255, 0.90);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .pantalla-carga {
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,7 +330,7 @@ body{
 
 .spinner {
     border: 4px solid rgba(255, 255, 255, 0.3);
-    border-top: 4px solid #0077b6; /* Color del spinner */
+    border-top: 4px solid #0077b6;
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -31,6 +340,6 @@ body{
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
-}
+} */
 
 

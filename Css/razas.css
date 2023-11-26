@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 12vh;
+    padding: 0vw 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(0, 0, 230, 0.60);
+}
+
+header .logo_text{
+    width: 13vw;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.logo_text img{
+    width: 2.2vw;
+    margin-top: 1vh;
+}
+
+.logo_text a{
+    font-size: 2vw;
+    font-weight: 600;
+    margin-top: 0.2vh;
+    text-decoration: none;
+    color: blanchedalmond;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header ul a{
+    margin-right: 4vw;
+    font-size: 1.4vw;
+    font-weight: 600;
+    color: blanchedalmond;
+    text-decoration: none;
+}
+
+.header__perfil{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 6.6vw;
+}
+
+.header__perfil h2{
+    color: blanchedalmond;
+    font-size: 1.3vw;
+}
+
+.header__perfil img{
+    width: 2.6vw;
+}
+
+main{
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12vw;
+}
+
+main section{
+    border: 0.1vw solid white;
+    border-radius: 0.6vw;
+    box-shadow: 0vw 0vw 0.6vw 0.2vw rgba(255, 235, 205, 0.60);
+    background: rgba(0, 0, 230, 0.52);
+    height: 80vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main section h2{
+    text-align: center;
+    margin-top: 4vh;
+    color: rgb(50, 30, 0);
+}
+
+.main_registroRaza div{
+    margin-top: 6vh;
+}
+
+.main_registroRaza input{
+    height: 5vh;
+    border-radius: 0.2vw;
+    padding-left: 1vw;
+    font-size: 1.1vw;
+    border: none;
+}
+
+.main_registroRaza input:focus{
+    border: 0.2vw solid rgb(50, 30, 0);
+    outline: none;
+}
+
+.main_registroRaza button,
+.main_cantidadMascota button{
+    height: 5vh;
+    width: 6vw;
+    border-radius: 0.2vw;
+    margin-left: 1vw;
+    font-size: 1.1vw;
+    border: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.main_registroRaza button:hover,
+.main_cantidadMascota button:hover{
+    color: antiquewhite;
+    background: rgb(50, 30, 0);
+}
+
+.main_cantidadMascota button{
+  margin-top: 4vh;
+  margin-left: 4vw;
+}
+
+.titulo__cantidadMascota{
+    width: 50vh;
+    margin-top: 6vh;
+    display: flex;
+    justify-content: space-between;
+    gap: 2vh;
+    font-size: 4vh;
+    font-weight: 600;
+    color: rgb(50, 30, 0);
+}
+
+.raza-info{
+    margin-top: 4vh;
+    margin-left: 2vh;
+    width: 42vh;
+    color: antiquewhite;
+}
+
+.raza-info p{
+    display: flex;
+    margin-top: 2vh;
+    justify-content: space-between;
+}

@@ -22,11 +22,11 @@ main{
 }
 
 main h2{
-    margin-top: 12vh;
+    margin-top: 6vh;
     margin-right: 3vw;
-    padding-bottom: 4vh;
     font-size: 2.6vw;
     text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 main article{
@@ -37,13 +37,14 @@ main article{
 
 main article a{
     margin-right: 3vw;
-    margin-top: 4vh;
+    margin-top: 2vh;
     text-decoration: none;
     font-size: 1.2vw;
     color: rgba(0, 0, 220, 0.90);
 }
 
 main .input__login{
+    position: relative;
     margin-top: 6vh;
     margin-left: 4vw;
     font-size: 1.2vw;
@@ -51,7 +52,7 @@ main .input__login{
 }
 
 .input__login input{
-    height: 6vh;
+    height: 5vh;
     width: 78%;
     padding-left: 1vw;
     font-size: 1.1vw;
@@ -66,9 +67,17 @@ main .input__login{
     border-bottom: 0.2vw solid rgba(0, 0, 220, 0.90);
 }
 
+main p{
+    position: absolute;
+    margin-top: 1.9vh;
+    margin-left: 1vw;
+    font-size: 1.8vh;
+    color: red;
+}
+
 main .Remember__Me{
     margin-left: 4vw;
-    margin-top: 6vh;
+    margin-top: 7vh;
     font-size: 1.2vw;
     display: flex;
     align-items: center;
@@ -88,23 +97,15 @@ main .Remember__Me{
     cursor: pointer;
 }
 
-.Remember__Me div input{
-    width: 2vh;
-    height: 2vh;
-    border-radius: 0.4vh;
-    border: 0.1vh solid black;
-}
-
 .Remember__Me a{
     color: blue;
-    
-    
+    text-decoration: none;
     font-size: 0.9vw;
 }
 
-button{
-    margin-top: 12vh;
-    margin-right: 2vw;
+form button{
+    margin-top: 5vh;
+    margin-right: 2.6vw;
     width: 70%;
     height: 8vh;
     font-size: 1.2vw;
@@ -134,6 +135,10 @@ button:hover{
     box-shadow: 0vw 0vw 0.4vw 0.1vw rgba(0, 0, 0, 0.60);
 }
 
-/* #form_inicio{
-    display: none;
-} */
+.error-message {
+    position: absolute;
+    color: red;
+    font-size: 1.7vh;
+    margin-top: 1vh; 
+    margin-left: 1vh;
+}

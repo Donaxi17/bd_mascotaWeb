@@ -1,11 +1,11 @@
 
-<?php 
+<?php
 
-class Raza {
-
+class Raza
+{
     public int $id;
     public string $nombre;
-    public int $tipoMascotaId;
+    public int $TipoMascota_Id;
 
 }
 
