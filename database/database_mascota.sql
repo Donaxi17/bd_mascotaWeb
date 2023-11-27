@@ -132,6 +132,14 @@ CREATE TABLE IF NOT EXISTS `database_mascota`.`ControlVacuna` (
 ENGINE = InnoDB;
 
 
+insert into role (nombre) values ('Admin'), ('Cliente');
+insert into tipomascota (nombre) values ('Pitbull'), ('Bulldog'),('Chihuahua'), ('Arabe'),('Poni'), ('Cotorra'), ('Perico');
+insert into raza (nombre,TipoMascota_id) values ('Perro',1), ('Gato',2), ('Loro',2), ('Vaca',2), ('Caballo',2);
+insert into mascota (nombre,FechaNacimiento,User_id,TipoMascota_id,Raza_id) values ('Nico','2023-11-10',2,71,103),('Poseidon','2023-11-10',2,1,1),('Benyi','2023-11-10',1,1,1);
+insert into vacuna (nombre) values ('Rabia'),('FVRCP'),('Tétanos'),('PI-3'),('Peritoniti'),('Moquillo');
+insert into user (nombre,username,email,clave,Role_id) values ('Donaxi','Dona17','donaxjimenez00@gmail.com',12345,1),('Yovert','Yot001',12345,'yotJimenez@gmail.com',1);
+
+
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
